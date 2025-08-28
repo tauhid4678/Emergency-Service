@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <!-- tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- fontawsome  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="home">
+    <nav class="w-full h-[100px] bg-white pl-[24px] pt-[60px] pb-[60px] pr-[24px] flex items-center justify-between">
+        <div class="logoparent flex  justify-between items-center w-[195.72px] h-[50px] gap-3">
+            <div class="logo w-[50px] h-[50px]">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+                <div class="logotext w-[135.72px] h-[44.69px] text-[#006747] font-bold ">
+                    <strong class="">Emergency
+                    <br>Service</strong>
+                </div>
+            </div>
+            <div class="nav-stats flex justify-center items-center w-[24.5rem] h-[3.25rem] gap-[20px]">
+                <div id="heart" class="heartstats w-[123px] h-[52px] gap-[10px] rounded-2xl bg-[rgb(65,255,107,.1)] flex justify-center items-center px-5 py-5">
+                    <span id="heartcount" class="w-6 h-6 font-bold text-[16px]">0</span>
+                    <img src="./assets/heart.png" alt="coin" class="w-[30px] h-[30px]">
+                </div>
+                <div id="coin" class="coinstats w-[123px] h-[52px] gap-[10px] rounded-2xl bg-[rgb(65,255,107,.1)] flex justify-center items-center px-5 py-3">
+                    <span id="coincount" class="w-6 h-6 font-bold text-[16px]">100</span>
+                    <img src="./assets/coin.png" alt="coin" class="w-[24px] h-[24px]">
+                </div>
+                <div id="copy" class="copystats w-[123px] h-[52px] gap-[1px] rounded-2xl bg-[#00A63E] flex justify-center items-center px-5 py-3 text-[#FFFFFF] ">
+                    <span id="coincount" class="w-6 h-6 font-bold text-[16px]">2</span>
+                    <h1 class="font-semibold">Copy</h1>
+                </div>
+            </div>  
+    </nav>
+    
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
