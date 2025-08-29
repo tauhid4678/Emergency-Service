@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Service</title>
+  <!-- tailwindcss -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body class="home bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-white px-4 py-3 flex items-center justify-between shadow">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12">
+        <img src="./assets/logo.png" alt="Logo" class="w-full h-full object-contain">
+      </div>
+      <h1 class="text-[#006747] font-bold text-lg sm:text-xl">Emergency <br> Service</h1>
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Heart -->
+      <div id="heart" class="flex items-center gap-2 bg-green-100 rounded-xl px-3 py-2">
+        <span id="heartcount" class="font-bold">0</span>
+        <img src="./assets/heart.png" class="w-6 h-6" alt="heart">
+      </div>
+      <!-- Coin -->
+      <div id="coin" class="flex items-center gap-2 bg-green-100 rounded-xl px-3 py-2">
+        <span id="coincount" class="font-bold">100</span>
+        <img src="./assets/coin.png" class="w-5 h-5" alt="coin">
+      </div>
+      <!-- Copy -->
+      <div id="copy" class="flex items-center gap-2 bg-[#00A63E] text-white rounded-xl px-3 py-2">
+        <span class="font-bold">2</span>
+        <h1 class="font-semibold">Copy</h1>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="w-full px-4 py-8 text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+    <img src="./assets/logo-dark.png" alt="logo" class="w-20 h-20 mx-auto">
+    <h3 class="text-2xl sm:text-4xl font-bold text-white mt-4">Emergency Service Directory</h3>
+    <p class="text-sm sm:text-lg text-white mt-2 font-semibold">
+      Government Emergency Services at Your Fingertip – A Project by Government of Bangladesh
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="w-full flex flex-col lg:flex-row gap-6 p-4">
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+      <!-- Service Card Example -->
+      <div class="bg-white rounded-2xl p-5 shadow">
+        <div class="flex justify-between items-center">
+          <div class="bg-[#FFE3E2] p-3 rounded-lg">
+            <img src="./assets/emergency.png" class="w-8 h-8" alt="icon">
+          </div>
+          <button><i class="fa-regular fa-heart text-lg"></i></button>
+        </div>
+        <h1 class="font-bold text-lg mt-4">National Emergency Number</h1>
+        <p class="text-gray-600">National Emergency</p>
+        <h2 class="font-bold text-xl mt-2">999</h2>
+        <div class="bg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm">ALL</div>
+        <div class="flex justify-between items-center mt-6">
+          <button class="flex items-center gap-2 text-gray-700">
+            <i class="fa-regular fa-copy"></i><span class="font-bold">Copy</span>
+          </button>
+          <button class="flex items-center gap-2 bg-[#00A63E] text-white px-4 py-2 rounded-xl">
+            <i class="fa-solid fa-phone"></i><span class="font-bold">Call</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 🔁 Copy this block for other services (Police, Fire, Ambulance, etc.) -->
+    </div>
+
+    <!-- History Section -->
+    <div class="bg-white rounded-2xl p-5 w-full lg:w-[400px] shadow">
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-clock"></i>
+          <h2 class="font-bold">Call History</h2>
+        </div>
+        <button id="clearBtn" class="bg-[#00A63E] text-white px-4 py-2 rounded-2xl font-bold">Clear</button>
+      </div>
+      <!-- History Items -->
+      <div class="space-y-3">
+        <div class="bg-gray-100 rounded-xl p-3 flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p>999</p>
+          </div>
+          <span class="text-sm text-gray-600">11:36:58 AM</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

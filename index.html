@@ -14,238 +14,241 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="home">
-    <nav class="w-full h-[100px] bg-white pl-[24px] pt-[60px] pb-[60px] pr-[24px] flex items-center justify-between">
-        <div class="logoparent flex  justify-between items-center w-[195.72px] h-[50px] gap-3">
-            <div class="logo w-[50px] h-[50px]">
-                <img src="./assets/logo.png" alt="Logo">
+    <nav class="w-full  bg-white px-4 py-3 flex items-center justify-between shadow">
+        <div class="logoparent flex items-center  gap-3">
+            <div class="logo w-12 h-12">
+                <img src="./assets/logo.png" alt="Logo" class="w-full h-full object-contain">
             </div>
-                <div class="logotext w-[135.72px] h-[44.69px] text-[#006747] font-bold ">
-                    <strong class="">Emergency
-                    <br>Service</strong>
+                <div class="logotext  text-[#006747] font-bold text-lg sm:text-xl ">
+                    <strong>Emergency<br>Service</strong>
                 </div>
             </div>
-            <div class="nav-stats flex justify-center items-center w-[24.5rem] h-[3.25rem] gap-[20px]">
-                <div id="heart" class="heartstats w-[123px] h-[52px] gap-[10px] rounded-2xl bg-[rgb(65,255,107,.1)] flex justify-center items-center px-5 py-5">
-                    <span id="heartcount" class="w-6 h-6 font-bold text-[16px]">0</span>
-                    <img src="./assets/heart.png" alt="coin" class="w-[30px] h-[30px]">
+            <div class="nav-stats flex  items-center gap-3">
+                <div id="heart" class="heartstats bg-[rgb(65,255,107,.1)] flex items-center gap-2 rounded-xl px-3 py-2">
+                    <span id="heartcount" class="font-bold">0</span>
+                    <img src="./assets/heart.png" alt="coin" class="w-6 h-6">
                 </div>
-                <div id="coin" class="coinstats w-[123px] h-[52px] gap-[10px] rounded-2xl bg-[rgb(65,255,107,.1)] flex justify-center items-center px-5 py-3">
-                    <span id="coincount" class="w-6 h-6 font-bold text-[16px]">100</span>
-                    <img src="./assets/coin.png" alt="coin" class="w-[24px] h-[24px]">
+                <div id="coin" class="coinstats bg-[rgb(65,255,107,.1)] flex items-center gap-2 rounded-xl px-3 py-2">
+                    <span id="coincount" class="font-bold">100</span>
+                    <img src="./assets/coin.png" alt="coin" class="w-5 h-5">
                 </div>
-                <div id="copy" class="copystats w-[123px] h-[52px] gap-[1px] rounded-2xl bg-[#00A63E] flex justify-center items-center px-5 py-3 text-[#FFFFFF] ">
-                    <span id="coincount" class="w-6 h-6 font-bold text-[16px]">2</span>
+                <div id="copy" class="copystats bg-[#00A63E] flex items-center gap-2 rounded-xl px-3 py-2 text-[#FFFFFF] ">
+                    <span id="copycount" class="font-bold text-[16px]">2</span>
                     <h1 class="font-semibold">Copy</h1>
                 </div>
             </div>  
         </nav>
-    <header class="herosection w-full h-xl px-5 py-5 gap-3  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center ">
-        <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="logo">
-        <h3 class="herotitle font-bold  text-[40px] text-white">Emergency Service Directory</h3>
-        <p class="herodis font-semibold text-base sm:text-lg text-white pt-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    <header class="herosection w-full  px-4 py-8 text-center  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <img class="w-20 h-20 mx-auto" src="./assets/logo-dark.png" alt="logo">
+        <h3 class="herotitle text-2xl sm:text-4xl font-bold text-white mt-4">Emergency Service Directory</h3>
+        <p class="herodis text-sm sm:text-lg text-white mt-2 font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </header>
-    <main class="service w-full h-auto p-3 bg-emerald-50 flex justify-between">
-        <div class="services w-[1370px] h-90vh gap-6 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+    <main class="service w-full flex flex-col lg:flex-row gap-6 p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1 ">
             <!-- service 1 -->
             
-            <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
+            <div class="section bg-white rounded-2xl p-5 shadow">
                 <div class="serviceicon flex justify-between items-center">
-                    <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                        <img class="w-[30px] h-[30px] " src="./assets/emergency.png" alt="logo">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/emergency.png" alt="logo">
                     </div>
-                    <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
                     
                 </div>
                 <div>
                     <div class="">
-                        <h1 class="servicetitle font-bold text-xl gap-2 mt-5">National Emergency Number</h1>
-                        <p>National Emergency</p>
+                        <h1 class="servicetitle font-bold text-lg mt-4">National Emergency Number</h1>
+                        <p class="text-gray-600">National Emergency</p>
                     </div>
                     <h1 class="contact font-bold text-xl mt-2">999</h1>
-                    <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">ALL</h1></div>
-                    <div class="buttons flex justify-between items-center mt-7">
-                        <div>
-                            <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
-                        </div>
-                        <div>
-                            <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                        </div>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">ALL</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
+
                     </div>
                 </div>
             </div> 
             <!-- service 2 -->
-            <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
+            
+            <div class="section bg-white rounded-2xl p-5 shadow">
                 <div class="serviceicon flex justify-between items-center">
-                    <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                        <img class="w-[30px] h-[30px] " src="./assets/police.png" alt="logo">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/police.png" alt="logo">
                     </div>
-                    <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
                     
                 </div>
                 <div>
                     <div class="">
-                        <h1 class="servicetitle font-bold text-xl gap-2 mt-5">Police Helpline Number</h1>
-                        <p>Police</p>
+                        <h1 class="servicetitle font-bold text-lg mt-4">Police Helpline Number</h1>
+                        <p class="text-gray-600">Police</p>
                     </div>
                     <h1 class="contact font-bold text-xl mt-2">999</h1>
-                    <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">Police</h1></div>
-                    <div class="buttons flex justify-between items-center mt-7">
-                        <div>
-                    <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
-                </div>
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                </div>
-                </div>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">Police</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
+
+                    </div>
                 </div>
             </div> 
-        <!-- service 3 -->
-           <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
-            <div class="serviceicon flex justify-between items-center">
-                <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                    <img class="w-[30px] h-[30px] " src="./assets/fire-service.png" alt="logo">
+            <!-- service 3 -->
+            
+            <div class="section bg-white rounded-2xl p-5 shadow">
+                <div class="serviceicon flex justify-between items-center">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/fire-service.png" alt="logo">
+                    </div>
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
+                    
                 </div>
-                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                <div>
+                    <div class="">
+                        <h1 class="servicetitle font-bold text-lg mt-4">Fire Service Number</h1>
+                        <p class="text-gray-600">Fire Service</p>
+                    </div>
+                    <h1 class="contact font-bold text-xl mt-2">999</h1>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">Fire</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
 
-           </div>
-           <div>
-            <div class="">
-            <h1 class="servicetitle font-bold text-xl gap-2 mt-5">Fire Service Number</h1>
-            <p>Fire Service</p>
-            </div>
-            <h1 class="contact font-bold text-xl mt-2">999</h1>
-            <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">Fire</h1></div>
-            <div class="buttons flex justify-between items-center mt-7">
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                    </div>
+                </div>
+            </div> 
+            <!-- service 4 -->
+            
+            <div class="section bg-white rounded-2xl p-5 shadow">
+                <div class="serviceicon flex justify-between items-center">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/ambulance.png" alt="logo">
+                    </div>
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
+                    
                 </div>
                 <div>
-                    <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                </div>
-            </div>
-           </div>
-           </div> 
-        <!-- service 4 -->
-           <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
-            <div class="serviceicon flex justify-between items-center">
-                <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                    <img class="w-[30px] h-[30px] " src="./assets/ambulance.png" alt="logo">
-                </div>
-                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                    <div class="">
+                        <h1 class="servicetitle font-bold text-lg mt-4">Ambulance Service</h1>
+                        <p class="text-gray-600">Ambulance</p>
+                    </div>
+                    <h1 class="contact font-bold text-xl mt-2">1994-999999</h1>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">Health</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
 
-           </div>
-           <div>
-            <div class="">
-            <h1 class="servicetitle font-bold text-xl gap-2 mt-5">Ambulance Service</h1>
-            <p>Ambulance</p>
-            </div>
-            <h1 class="contact font-bold text-xl mt-2">1994-999999</h1>
-            <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">Health</h1></div>
-            <div class="buttons flex justify-between items-center mt-7">
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                    </div>
+                </div>
+            </div> 
+            <!-- service 5 -->
+            
+            <div class="section bg-white rounded-2xl p-5 shadow">
+                <div class="serviceicon flex justify-between items-center">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/Bangladesh-Railway.png" alt="logo">
+                    </div>
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
+                    
                 </div>
                 <div>
-                    <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                </div>
-            </div>
-           </div>
-           </div> 
-        <!-- service 5 -->
-           <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
-            <div class="serviceicon flex justify-between items-center">
-                <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                    <img class="w-[30px] h-[30px] " src="./assets/Bangladesh-Railway.png" alt="logo">
-                </div>
-                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                    <div class="">
+                        <h1 class="servicetitle font-bold text-lg mt-4">Bangladesh-Railway Helpline</h1>
+                        <p class="text-gray-600">Bangladesh-Railway</p>
+                    </div>
+                    <h1 class="contact font-bold text-xl mt-2">163</h1>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">Travel</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
 
-           </div>
-           <div>
-            <div class="">
-            <h1 class="servicetitle font-bold text-xl gap-2 mt-5">Bangladesh Railway Helpline</h1>
-            <p>Bangladesh Railway</p>
-            </div>
-            <h1 class="contact font-bold text-xl mt-2">163</h1>
-            <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">Travel</h1></div>
-            <div class="buttons flex justify-between items-center mt-7">
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                    </div>
+                </div>
+            </div> 
+            <!-- service 6 -->
+            
+            <div class="section bg-white rounded-2xl p-5 shadow">
+                <div class="serviceicon flex justify-between items-center">
+                    <div class="bg-[#FFE3E2] p-3 rounded-lg">
+                        <img class="w-[30px] h-[30px]w-8 h-8 " src="./assets/brac.png" alt="logo">
+                    </div>
+                    <button><i class="fa-regular fa-heart text-lg"></i></button> <!-- Heart icon -->
+                    
                 </div>
                 <div>
-                    <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                </div>
-            </div>
-           </div>
-           </div> 
-        <!-- service 6 -->
-           <div class="section w-[320px] h-[280px] gap-3 p-5 bg-white rounded-2xl">
-            <div class="serviceicon flex justify-between items-center">
-                <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
-                    <img class="w-[30px] h-[30px] " src="./assets/brac.png" alt="logo">
-                </div>
-                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
+                    <div class="">
+                        <h1 class="servicetitle font-bold text-lg mt-4">Brac Helpline</h1>
+                        <p class="text-gray-600">Brac</p>
+                    </div>
+                    <h1 class="contact font-bold text-xl mt-2">16445</h1>
+                    <div class= "servicetypebg-gray-100 w-fit px-3 py-1 rounded-xl mt-2 text-sm"><h1 class="text-center">NGO</h1></div>
+                    <div class="flex justify-between items-center mt-6">
+                            <button class="flex items-center gap-2"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                        
+                        
+                            <button class="flex justify-center items-center gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
 
-           </div>
-           <div>
-            <div class="">
-            <h1 class="servicetitle font-bold text-xl gap-2 mt-5">Brac Helpline</h1>
-            <p>Brac</p>
-            </div>
-            <h1 class="contact font-bold text-xl mt-2">16445</h1>
-            <div class= "servicetype bg-[#F2F2F2] w-[53px] h-[37px] rounded-2xl flex justify-center items-center mt-2"><h1 class="text-center">NGO</h1></div>
-            <div class="buttons flex justify-between items-center mt-7">
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 w-[100px] h-[30px] mt-1"><i class="fa-regular fa-copy"></i><p class="font-bold">Copy</p></button>
+                    </div>
                 </div>
-                <div>
-                    <button class="flex justify-center items-center p-3 gap-2 bg-[#00A63E] w-[100px] h-[30px] rounded-2xl"><i class="fa-solid fa-phone"></i><p class="font-bold text-white">Call</p></button>
-                </div>
-            </div>
-           </div>
-           </div> 
+            </div> 
+            
     </div>
     <!-- history section  -->
-    <div class="history w-[400px] h-max-[1140px]  p-5 rounded-2xl mt-4 bg-white">
-        <div class="historytitle min-w-[352px] h-[50px] flex justify-between items-center ">
-            <div class="flex items-center gap-2 ml-2">
+    <div class="history bg-white rounded-2xl p-5 w-full lg:w-[400px] shadow">
+        <div class="historytitle flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
                 <i class="fa-regular fa-clock"></i>
                 <h2 class="cal font-bold">Call History</h2>
             </div>
             <div class="clearbutton" id="clearBtn">
-                <button class="clearbutton w-[116px] h-[50px] p-3 bg-[#00A63E] font-bold text-white rounded-3xl text-center">Clear</button>
+                <button id="clearBtn" class="clearbutton bg-[#00A63E] text-white px-4 py-2 rounded-2xl font-bold">Clear</button>
             </div>
 
         </div>
-        <div class="calls">
-            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
+        <div class="calls space-y-3 mt-2">
+            <div class="onecalss bg-gray-100 rounded-xl p-3 flex justify-between items-center">
                 <div>
                     <h1 class="callstitle font-bold">Fire Service Number </h1>
                     <p>999</p>
                 </div>
-                <div class="calltime">11:36:58 AM</div>
+                <div class="calltime  text-gray-600">11:36:58 AM</div>
 
 
             </div>
         </div>
-        <div class="calls">
-            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
+        <div class="calls space-y-3 mt-2">
+            <div class="onecalss bg-gray-100 rounded-xl p-3 flex justify-between items-center">
                 <div>
-                    <h1 class="callstitle font-bold">Bangladesh Railway Helpline </h1>
+                    <h1 class="callstitle font-bold">Fire Service Number </h1>
                     <p>999</p>
                 </div>
-                <div class="calltime">11:36:58 AM</div>
-            </div>
-            
-        </div>
-        <div class="calls">
-            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
-                <div>
-                    <h1 class="callstitle font-bold">Bangladesh Railway Helpline </h1>
-                    <p>999</p>
-                </div>
-                <div class="calltime">11:36:58 AM</div>
-            </div>
+                <div class="calltime  text-gray-600">11:36:58 AM</div>
 
+
+            </div>
+        </div>
+        <div class="calls space-y-3 mt-2">
+            <div class="onecalss bg-gray-100 rounded-xl p-3 flex justify-between items-center">
+                <div>
+                    <h1 class="callstitle font-bold">Fire Service Number </h1>
+                    <p>999</p>
+                </div>
+                <div class="calltime  text-gray-600">11:36:58 AM</div>
+
+
+            </div>
+        </div>
+        
         </div>
        
 
