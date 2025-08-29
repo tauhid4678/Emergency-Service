@@ -39,12 +39,12 @@
                 </div>
             </div>  
         </nav>
-    <header class="herosection w-full h-xl px-[60px] py-[12px] gap-[10px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center ">
+    <header class="herosection w-full h-xl px-5 py-5 gap-3  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center ">
         <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="logo">
         <h3 class="herotitle font-bold  text-[40px] text-white">Emergency Service Directory</h3>
         <p class="herodis font-semibold text-base sm:text-lg text-white pt-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </header>
-    <main class="border-2 border-amber-500 w-full h-auto p-3 bg-emerald-50 flex justify-between">
+    <main class="service w-full h-auto p-3 bg-emerald-50 flex justify-between">
         <div class="services w-[1370px] h-90vh gap-6 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
             <!-- service 1 -->
             
@@ -53,7 +53,7 @@
                     <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                         <img class="w-[30px] h-[30px] " src="./assets/emergency.png" alt="logo">
                     </div>
-                    <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                    <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
                     
                 </div>
                 <div>
@@ -79,7 +79,7 @@
                     <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                         <img class="w-[30px] h-[30px] " src="./assets/police.png" alt="logo">
                     </div>
-                    <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                    <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
                     
                 </div>
                 <div>
@@ -105,7 +105,7 @@
                 <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                     <img class="w-[30px] h-[30px] " src="./assets/fire-service.png" alt="logo">
                 </div>
-                <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
 
            </div>
            <div>
@@ -131,7 +131,7 @@
                 <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                     <img class="w-[30px] h-[30px] " src="./assets/ambulance.png" alt="logo">
                 </div>
-                <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
 
            </div>
            <div>
@@ -157,7 +157,7 @@
                 <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                     <img class="w-[30px] h-[30px] " src="./assets/Bangladesh-Railway.png" alt="logo">
                 </div>
-                <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
 
            </div>
            <div>
@@ -183,7 +183,7 @@
                 <div class="w-m h-lg bg-[#FFE3E2] rounded-lg flex justify-center items-center">
                     <img class="w-[30px] h-[30px] " src="./assets/brac.png" alt="logo">
                 </div>
-                <i class="fa-solid fa-heart"></i> <!-- Heart icon -->
+                <button><i class="fa-sharp fa-regular fa-heart"></i></button> <!-- Heart icon -->
 
            </div>
            <div>
@@ -204,7 +204,53 @@
            </div>
            </div> 
     </div>
-    <div class="history w-[400px] h-max-[1140px] border-2 border-amber-500 p-5"><h1>Call History</h1></div>
+    <!-- history section  -->
+    <div class="history w-[400px] h-max-[1140px]  p-5 rounded-2xl mt-4 bg-white">
+        <div class="historytitle min-w-[352px] h-[50px] flex justify-between items-center ">
+            <div class="flex items-center gap-2 ml-2">
+                <i class="fa-regular fa-clock"></i>
+                <h2 class="cal font-bold">Call History</h2>
+            </div>
+            <div class="clearbutton" id="clearBtn">
+                <button class="clearbutton w-[116px] h-[50px] p-3 bg-[#00A63E] font-bold text-white rounded-3xl text-center">Clear</button>
+            </div>
+
+        </div>
+        <div class="calls">
+            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
+                <div>
+                    <h1 class="callstitle font-bold">Fire Service Number </h1>
+                    <p>999</p>
+                </div>
+                <div class="calltime">11:36:58 AM</div>
+
+
+            </div>
+        </div>
+        <div class="calls">
+            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
+                <div>
+                    <h1 class="callstitle font-bold">Bangladesh Railway Helpline </h1>
+                    <p>999</p>
+                </div>
+                <div class="calltime">11:36:58 AM</div>
+            </div>
+            
+        </div>
+        <div class="calls">
+            <div class="onecalss min-w-[352px] h-[83px] bg-[#FAFAFA] flex items-center justify-between rounded-2xl p-4 gap-3 mt-3">
+                <div>
+                    <h1 class="callstitle font-bold">Bangladesh Railway Helpline </h1>
+                    <p>999</p>
+                </div>
+                <div class="calltime">11:36:58 AM</div>
+            </div>
+
+        </div>
+       
+
+        </div>
+    </div>
     </main>
 
     
